@@ -1,0 +1,321 @@
+/************
+HEADER
+*************/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:800);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700);
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.head {
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.95;
+    width: 100%;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    z-index: 1;
+}
+
+.headline {
+    margin: 0;
+    float: left;
+    margin-left: 20px;
+    margin-top: 17px;
+    font-size: 1.9em;
+    font-weight: 700;
+    color: white;
+}
+
+ul li {
+    margin: 0 5px;
+    margin-top: 5px;
+    
+}
+
+.logo {
+    float: left;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 70px;
+}
+
+h2 a:hover {
+    color: navy;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.nav-pills > li a {
+    color: #F44336;
+    font-size: 1.15em;
+    font-weight: 700;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: white;
+background-color: #03A9F4;
+}
+
+/************
+BANNER
+*************/
+
+.banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: url("../img/background-mockup.jpeg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+
+#home-slogan {
+    position: relative;
+    top: 30%;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    width: 280px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+    color: white;
+    border: solid 0.8em white;
+}
+
+#home-slo {
+    font-weight: 800;
+    padding: 20px;
+    
+}
+
+#try {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background-color: #FF5252;
+    color: white;
+}
+
+#try:hover {
+    text-decoration: none;
+    background-color: #E53935;
+    color: white;
+}
+
+.info {
+    position: relative;
+    transform: translateY(625px);
+    top: 15%;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-mini {
+    position: relative;
+    top: 50%;
+    color: black;
+    display: block;
+}
+
+.main-headings{
+    width: 235px;
+    margin: 0 auto;
+    font-size: 3em;
+    font-family: 'Lato', sans-serif;
+    padding: 50px 0;
+    
+}
+
+
+.about-mini p {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Slabo", sans-serif;
+    font-weight: 500;
+    width: 70%;
+    margin:-10px auto;
+    margin-bottom: 70px;
+        
+}
+
+
+#cross {
+    width: 295px;
+}
+
+.small {
+    margin: 20px auto;
+    height: 325px;
+    width: 375px;
+    border-radius: 5px;
+}
+    
+.accessible {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EEE;
+    text-align: center;
+}
+
+.accessible p {
+    font-size: 1.2em;
+}
+
+.images {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.small:hover {
+    width: 385px;
+    height: 335px;
+    -webkit-transition-duration: 0.8s;
+}
+
+.promo {
+    background: url("../img/banner-mock.jpeg");
+    width: 100%;
+    height: 300px;
+}
+
+
+.background-banner {
+    background: url(../img/contact-back.jpeg) center no-repeat;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.background-banner h3 {
+    font-size: 3.5em;
+    font-weight: 800;
+}
+
+
+.mobile {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+    
+.mockup-pics {
+    background: url("../img/app.jpg") center no-repeat;
+    height: 500px;
+    background-size: cover;
+    text-align: center;
+}
+
+.mockup-pics1 {
+    background: url("../img/samsung-mock.jpg") center no-repeat;
+    height: 500px;
+    background-size: cover;
+    text-align: center;
+    text-transform: i
+}
+
+.white {
+    background-color: #263238;
+    
+}
+
+.colors {
+    background-color: #263238;
+    padding-bottom: 10px;
+}
+
+
+/**********
+ABOUT
+***********/
+.headings {
+    font-weight: 900;
+    color: #03A9F4;
+    margin: 0 auto;
+    font-size: 1.9em;
+    width: 275px;
+}
+
+.about {
+    background-color: #E0F7FA;
+    margin-top: 40px;
+    
+}
+
+.about h3 {
+    font-size: 3.5em;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+.about-us {
+    padding: 0;
+}
+
+.about p {
+    margin: 0 auto;
+    font-size: 1.25em;
+    width: 220px;
+    padding-bottom: 45px;
+}
+
+.process {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.process h4 {
+    text-align: center;
+    font-weight: 700;
+    color: #263238;
+}
+
+.pop-up, .pop-down {
+    margin: 50px 0;
+}
+
+.process p {
+    text-align: center;
+}
+
+.samsung, .ipad {
+    position: relative;
+    top: 30%;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 1.5em;
+    background-color: #FF5252 ;
+    padding: 20px 5px;
+    width: 300px;
+    margin: 0 auto;
+    opacity: 0.75;
+}
+
+
+.ipad {
+    background-color: #64B5F6 ;
+}

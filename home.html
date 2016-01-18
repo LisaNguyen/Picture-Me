@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Picture-Me | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/home.css" type="text/css">
+        <link rel="stylesheet" href="css/animate.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="/path/to/parallax.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script> 
+        <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+        
+        <script type="text/jscript">
+        <!--HIDES ABOUT PARAGRAPH-->
+        
+        <!--FADES IN PARAGRAPH UPON CLICKING THE ABOUT NAV TAB--> 
+        
+        $(document).ready(function() { 
+        
+        $("#home-slogan").addClass("animated slideInDown");  
+        
+        $( ".process" ).mouseenter(function() {
+        $(".pop-up").addClass("animated slideInUp"); 
+        $(".pop-down").addClass("animated slideInDown");  
+        });
+        
+        $( ".process" ).mouseleave(function() {
+        $(".pop-up").removeClass("animated slideInUp"); 
+        $(".pop-down").removeClass("animated slideInDown");  
+        });
+        
+        $(".samsung").hide();
+        $(".mockup-pics1").hover(function() {
+        $(".samsung").fadeIn("slow");
+        });
+        
+        $(".about-mini").mouseenter(function() {
+        $(".main-headings").addClass("animated shake");
+        });
+        
+        $( ".about-mini" ).mouseleave(function() {
+        $(".main-headings").removeClass("shake"); 
+
+        });
+    
+        
+        $(".mockup-pics1").mouseleave(function() {
+        $(".samsung").fadeOut("slow");
+        });
+        
+        
+        $(".ipad").hide();
+        $(".mockup-pics").mouseenter(function() {
+        $(".ipad").fadeIn("slow");
+        });
+        
+        $(".mockup-pics").mouseleave(function() {
+        $(".ipad").fadeOut("slow");
+        });
+        
+      
+        
+
+        });
+        
+        
+        
+        
+        $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 580) {
+        $(".head").addClass("white");
+        $(".navbar-inverse .navbar-collapse").addClass("colors");
+        } 
+        else {
+        $(".head").removeClass("white");
+        $(".navbar-inverse .navbar-collapse").removeClass("colors");
+        }
+        });
+        
+
+        </script>
+        
+        <script src="./js/parallax.min.js"></script>
+    </head>
+    <body>
+        <div class="container-block">
+        <div class="banner">
+                <div class="head">
+                <header>
+                <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                    <a href="home.html"><h2 class="headline">PICTURE-ME</h2></a>
+                <div class="container">
+                   
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                  </div><!--END OF NAVBAR-HEADER CLASS-->
+                    
+                  <!--START OF NAV BAR WITH LINKS-->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav nav-pills pull-right">
+                     <li id="home" class="active"><a href="home.html">HOME</a></li>
+                     <li id="about"><a id="do" href="app.html">APP</a></li>
+                     <li id="about"><a id="do" href="login.php">LOG IN</a></li>
+                     </ul>
+                 </div><!--END OF COLLAPSE NAVBAR-COLLAPSE CLASS-->
+                    
+                </div> <!--END OF CONTAINER CLASS-->
+                    </nav>
+                </header>
+                </div><!--END OF HEAD CLASS-->
+                <div id="home-slogan">
+                <h3 id="home-slo">Crafting a simple and effective communication tool.</h3>
+                    <a href="app.html"><button id="try" class="btn btn-block btn-blue"><i class="fa fa-info-circle"></i> EXPLORE APP</button></a>
+            </div><!--END OF HOME-SLOGAN ID-->
+                    
+            </div> <!--END OF BANNER CLASS-->
+            
+            <section>
+                <div class="row">
+                    <div class="col-sm-12 about-mini">
+                    <h3 class="main-headings">Picture-Me</h3>
+                        <p>A simple yet effective, cross-platform communication tool that is easy to navigate, quick to use, and encourages social interaction with a click of a button. </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!--MOCK UP IMAGES OF HOW THE APP SHOULD LOOK-->
+            <section class="mockups">
+                <div class="row">
+                    <div class="col-md-6 mockup-pics1 img-responsive">
+           
+                        <p class="samsung">Picture-Me offers a user-friendly design and interface which allows seamless navigation through the app.</p>
+                        
+                    </div>
+                    
+                    <div class="col-md-6 mockup-pics img-responsive">
+                        <p class="ipad">As well as a reliable, portable system which offers an easy way of communicating independently.</p>
+                    </div>
+                </div>
+            </section>
+                 
+         <!--WHAT WE DO SECTION-->
+         <div class="row process">
+            <h3 class="headings">WHAT WE'RE DOING</h3>
+            <div class="col-sm-4 pop-up">
+               <h4>KEEPING IT SIMPLE</h4>
+               <p>Carefully crafted to invoke simplicity into almost every aspect of our design and interface - allowing smooth interaction with the features and options presented. </p>
+            </div>
+            <div class="col-sm-4 pop-down">
+               <h4>MAKING COMMUNICATION EASY</h4>
+               <p>A system which has been meticulously developed with the purpose of making communication easy. Enables social interaction through the use of pictures which allows the user to form sentences using relevent images.</p>
+            </div>
+            <div class="col-sm-4 pop-up">
+               <h4>ENCOURAGING SOCIAL INTERACTION</h4>
+               <p>Developed and designed to be a fast and effective communication system that you can take on the go - encouraging independent social interaction. </p>
+            </div>
+         </div>
+            <!--END OF WHAT WE DO SECTION-->
+            
+            <!--CROSS PLATFORM IMAGES-->
+            <section class="accessible">
+                <h3 class="main-headings" id="cross">Cross-Platform</h3>
+                <p>Accessible on any of the devices below.</p>
+                <div class="row images">
+                    <div class="col-sm-4">
+                        <img class="small img-responsive" src="img/smartphone.jpg" alt="Smartphone">
+                        <p class="mobile">Mobile</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="small img-responsive" src="img/laptop.gif" alt="Laptop">
+                        <p class="mobile">Desktop</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="small img-responsive" src="img/tablet.gif" alt="Tablet">
+                        <p class="mobile">Tablet</p>
+                    </div>
+                </div>
+            </section>
+            <!--END OF CROSS PLATFORM IMAGES-->
+            
+            
+        </div>
+        
+    </body>
+</html>
+       

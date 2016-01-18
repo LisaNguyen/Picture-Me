@@ -1,0 +1,80 @@
+body {
+    background-color: #ECEFF1;
+    min-height: 100%;
+    }
+
+.navbar-inverse {
+    background-color: #263238;
+    height: 70px;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.app-emotion h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 4.5em;
+    font-weight: 800;
+    margin-left: 35px;
+}
+
+
+.heading {
+    color: white;
+}
+
+
+.app-emotion {
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 120px;
+    
+}
+
+.app-image {
+    cursor: pointer;
+}
+
+
+.emot {
+    width: 385px;
+    margin: 40px auto;
+}
+
+.emot p{
+    margin-top: -10px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.app-image {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+
+
+.nav-pills > li a {
+    color: #F44336;
+}
+
+.navbar-inverse .navbar-collapse {
+    background-color: #263238;
+    padding-bottom: 5px;
+}
+
+.fav {
+    margin: 0 auto;
+    width: 130px;
+    background-color: deepskyblue;
+    color: white;
+}
+
+.fav:hover {
+    background-color: dodgerblue;
+    color: #EEE;
+}
+
+
+

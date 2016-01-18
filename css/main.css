@@ -1,0 +1,62 @@
+html, body {
+    min-height: 100%;
+}
+
+/*
+h2 {
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    color: white;
+    width: 253px;
+    font-size: 3.5em;
+    margin: 0 auto;
+}
+*/
+h2 {
+    font-size: 3.5em;
+    font-weight: 900;
+}
+
+.block {
+    position: relative;
+    top: 35%;
+    margin-left: 20px;
+    color: white;
+    max-width: 550px;
+}
+
+.block p {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+body {
+    background: url("../img/background.jpeg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.btn-blue {
+    background-color: #29B6F6;
+}
+
+.btn-blue:hover {
+    background-color: #0288D1;
+    color: white;
+}
+
+#button {
+    color: white;
+    text-decoration: none;
+}
+
+#copy {
+    color: #EEE;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: 0 20px 20px 0;
+    font-weight: 900;
+}
+

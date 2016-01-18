@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Picture-Me | App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/home.css" type="text/css">
+      <link rel="stylesheet" href="css/nav.css" type="text/css">
+      <link rel="stylesheet" href="css/about.css" type="text/css">
+      <link rel="stylesheet" href="css/animate.css" type="text/css">
+      <link rel="stylesheet" href="css/app.css" type="text/css">
+       <link rel="stylesheet" href="css/register.css" type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+      <script type="text/jscript">
+         <!--HIDES ABOUT PARAGRAPH-->
+         $(document).ready(function(){
+         
+         <!--IMAGES SWING FUNCTION, ADD THIS UPON CLICK-->
+         $(".app-image").click(function() {
+            $(this).addClass("animated swing");
+         });
+         
+         <!--REMOVE THE EFFECT WHEN MOUSE LEAVES THE PICTURE-->
+         $(".app-image").mouseleave(function(){
+         $(this).removeClass("animated swing");
+         
+         });
+         });
+         
+         $(document).ready(function() {
+         $("#enter").click(function() {
+         var toAdd = $('input[name=speak]').val();
+         $('.speak_').append('<div class="item">' + toAdd + '</div>');
+         });
+         $(document).on("click", ".item", function() {
+         $(this).remove();
+});
+});
+         
+      </script>
+   </head>
+   <body>
+      <div class="container-block">
+         <div class="head app-head">
+            <header>
+               <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                <a href="home.html"><h2 class="heading">PICTURE-ME</h2></a>
+               <div class="container">
+                   
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav nav-pills pull-right">
+                     <li><a href="home.html">HOME</a></li>
+                     <li class="active"><a href="app.html">APP</a></li>
+                      <li><a href="#">LOG IN</a></li>
+                  </ul>
+                 </div>
+               </div>
+            </header>
+         </div>
+             
+             <section class="app-emotion">
+                 <h3 class="headings-app">How are you feeling?</h3>
+              
+                 <div class="row">
+                     <div class="col-sm-4 emot">
+                         <!--CHANGE THE WORD IN DOUBLE QUOTES BELOW AND THE PLUGIN WILL SAY IT UPON CLICK-->
+                         <img onclick='responsiveVoice.speak("happy");' class="app-image" src="img/emotions/happy.gif" alt="happy">
+                         <p>happy</p>
+                          <button class="btn fav btn-block btn-blue">Add to Favourites</button>
+
+                     </div>
+                    <div class="col-sm-4 emot">
+                        <!--CHANGE THE WORD IN DOUBLE QUOTES BELOW AND THE PLUGIN WILL SAY IT UPON CLICK-->
+                         <img onclick='responsiveVoice.speak("sad");' class="app-image" src="img/emotions/sad.gif" alt="sad">
+                         <p>sad</p>
+                         <button class="btn fav btn-block btn-blue">Add to Favourites</button>
+                     </div>
+                    <div class="col-sm-4 emot">
+                        <!--CHANGE THE WORD IN DOUBLE QUOTES BELOW AND THE PLUGIN WILL SAY IT UPON CLICK-->
+                         <img onclick='responsiveVoice.speak("angry");' class="app-image" src="img/emotions/angry.gif" alt="angry">
+                         <p>angry</p>
+                         <button class="btn fav btn-block btn-blue">Add to Favourites</button>
+                     </div>
+                     <div class="col-sm-4 emot">
+                         <!--CHANGE THE WORD IN DOUBLE QUOTES BELOW AND THE PLUGIN WILL SAY IT UPON CLICK-->
+                         <img onclick='responsiveVoice.speak("shocked");' class="app-image" src="img/emotions/shocked.gif" alt="shocked">
+                         <p>shocked</p>
+                         <button class="btn fav btn-block btn-blue">Add to Favourites</button>
+                     </div>
+                     <div class="col-sm-4 emot">
+                         <!--CHANGE THE WORD IN DOUBLE QUOTES BELOW AND THE PLUGIN WILL SAY IT UPON CLICK-->
+                         <img onclick='responsiveVoice.speak("nervous");' class="app-image" src="img/emotions/nervous.gif" alt="nervous">           
+                         <p>nervous</p>
+                         <button class="btn fav btn-block btn-blue">Add to Favourites</button>
+                     </div>
+                     <div class="col-sm-4 emot">
+                         <!--CHANGE THE WORD IN DOUBLE QUOTES BELOW AND THE PLUGIN WILL SAY IT UPON CLICK-->
+                         <img onclick='responsiveVoice.speak("hungry");' class="app-image" src="img/emotions/hungry.gif" alt="nervous">
+                         <p>hungry</p>
+                         <button class="btn fav btn-block btn-blue">Add to Favourites</button>
+                     </div>
+                 </div>
+           
+                 <label>Picture me</label><input type="text" name="speak" id="speakIt" placeholder="Your text here">
+                 <button onclick='responsiveVoice.speak(speakIt.value);' id="enter">Speak</button>
+                 
+                 <div class="speak_">
+                 </div>
+             </section>
+      </div>
+          <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+       </body>
+    </html>
